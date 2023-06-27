@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main class="container">
+    <!-- Rating state start -->
+    <div class="rate">
+      <i class='bx bxs-star'></i>
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support <br>request. All feedback is appreciated 
+        to help us <br> improve our offering!
+      </p>
+
+      <div class="rating">
+        <ul>
+          <li><button class="rate-button">1</button></li>
+          <li><button class="rate-button">2</button></li>
+          <li><button class="rate-button">3</button></li>
+          <li><button class="rate-button">4</button></li>
+          <li><button class="rate-button">5</button></li>
+        </ul>
+      </div>
+      <button class="btn" id="submit">
+        Submit
+      </button>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="thank-you hidden">
+      <div class="container2">
+        <img src="./images/illustration-thank-you.svg" alt="illustration thank you" class="thank-you-image">
+      <div class="result">
+        You selected
+        <span id="rated">5</span>
+        out of 5
+      </div>
+      <h1>Thank you!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. <br>If you ever need more support, 
+        don’t hesitate to <br> get in touch!
+      </p>
+      <i class='bx bx-refresh'></i>
+      </div>
+    </div>
+    
+
+    <!-- Thank you state end -->
+  </main>
+ 
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Fidelis "Dex" Adaikwu</a>.
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
